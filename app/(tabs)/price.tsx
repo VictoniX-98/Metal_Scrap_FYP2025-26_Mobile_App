@@ -7,7 +7,7 @@ import { data } from "@/constants/data";
 
 const Price = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {/* Top Header View */}
       <View style={styles.header}>
         <Text style={styles.title}>Guide Price</Text>
@@ -17,26 +17,24 @@ const Price = () => {
       </View>
 
       {/* Scroll View with BlurBackground */}
-        <FlatList
-          data={data.metal_details}
-          style={styles.contents}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (
-            <BlurView intensity={140} tint="dark" style={styles.price_card}>
-                <Image source={item.image} style={styles.metal_image} />
-                <View style={styles.metal_details}>
-                  <Text style={styles.metal_title}>{item.title}</Text>
-                  <Text style={styles.metal_description}>
-                    {item.description}
-                  </Text>
-                  <Text style={styles.metal_price}>
-                    TZS: {item.price.toLocaleString("en-TZ")}/=
-                  </Text>
-                </View>
-            </BlurView>
-          )}
-        />
-    </SafeAreaView>
+      <FlatList
+        data={data.metal_details}
+        contentContainerStyle={styles.contents}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => (
+          <BlurView intensity={140} tint="dark" style={styles.price_card}>
+            <Image source={item.image} style={styles.metal_image} />
+            <View style={styles.metal_details}>
+              <Text style={styles.metal_title}>{item.title}</Text>
+              <Text style={styles.metal_description}>{item.description}</Text>
+              <Text style={styles.metal_price}>
+                TZS: {item.price.toLocaleString("en-TZ")}/=
+              </Text>
+            </View>
+          </BlurView>
+        )}
+      />
+    </View>
   );
 };
 export default Price;
@@ -68,8 +66,7 @@ const styles = StyleSheet.create({
   },
 
   contents: {
-    height: "100%",
-    paddingTop: "40%",
+    paddingTop: "45%",
   },
 
   price_card: {

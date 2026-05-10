@@ -1,6 +1,5 @@
 
 export const image = {
-  icon: require("@/assets/icons/app_icon.png"),
   background: require('@/assets/images/background.png'),
   splash_image: require('@/assets/images/splash.png'),
 

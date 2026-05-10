@@ -30,15 +30,9 @@ const Calculator = () => {
     setCalculatedPrice(price * currency)
   }, [mass, unit, currency, selected_metal])
 
-  // const calculatePrice = (text: string) => {
-  //   const mass = Number(text);
-  //   const mass_in_kg = mass * unit;
-  //   const price = mass_in_kg * selected_metal.price;
-  //   setCalculatedPrice(price * currency)
-  // }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {/* Top Header View */}
       <View style={styles.header}>
         <Text style={styles.title}>Calculator</Text>
@@ -124,7 +118,7 @@ const Calculator = () => {
           </View>
         </View>
       </BlurView>
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -159,7 +153,7 @@ const styles = StyleSheet.create({
 
   calculator: {
     height: "100%",
-    marginTop: "40%",
+    marginTop: "45%",
     paddingTop: 10,
   },
 

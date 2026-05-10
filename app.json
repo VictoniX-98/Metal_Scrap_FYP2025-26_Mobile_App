@@ -1,25 +1,22 @@
 {
   "expo": {
-    "name": "metal_scrap",
+    "name": "Metal Scrap",
     "slug": "metal_scrap",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icons/app_icon.png",
+    "icon": "./assets/icons/icon.png",
     "scheme": "metalscrap",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.victonix.metal-scrap"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/icons/android-icon-foreground.png",
-        "backgroundImage": "./assets/icons/android-icon-background.png",
-        "monochromeImage": "./assets/icons/android-icon-monochrome.png"
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/icons/icon.png",
+        "monochromeImage": "./assets/icons/icon_monochrome.png"
       },
-      "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
       "package": "com.victonix.metal_scrap"
     },
@@ -33,12 +30,8 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
-          }
+          "resizeMode": "cover",
+          "backgroundColor": "#000000"
         }
       ]
     ],
