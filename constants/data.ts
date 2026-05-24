@@ -11,79 +11,6 @@ const convertTZStoUSD = async () => {
 
 // Data to be export for the App uses
 export const data = {
-  metal_details: [
-    {
-      id: 0,
-      image: image.allunium,
-      title: "Alluminium",
-      description: "Lightweight and corrosion resistant metal.",
-      price: 200000,
-    },
-    {
-      id: 1,
-      image: image.brass,
-      title: "Brass",
-      description: "Gold-like alloy made from copper and zinc.",
-      price: 3242532,
-    },
-    {
-      id: 2,
-      image: image.bronze,
-      title: "Bronze",
-      description: "Strong copper alloy commonly used in machinery.",
-      price: 2342422,
-    },
-    {
-      id: 3,
-      image: image.copper,
-      title: "Copper",
-      description: "Highly conductive metal used in electrical wiring.",
-      price: 3242532,
-    },
-    {
-      id: 4,
-      image: image.iron,
-      title: "Iron",
-      description: "Strong ferrous metal widely used in construction.",
-      price: 200000,
-    },
-    {
-      id: 5,
-      image: image.lead,
-      title: "Lead",
-      description: "Heavy soft metal commonly used in batteries.",
-      price: 3242532,
-    },
-    {
-      id: 6,
-      image: image.platinum,
-      title: "Platinum",
-      description: "Rare precious metal with high corrosion resistance.",
-      price: 2342422,
-    },
-    {
-      id: 7,
-      image: image.silver,
-      title: "Silver",
-      description: "Precious metal with excellent electrical conductivity.",
-      price: 3242532,
-    },
-    {
-      id: 8,
-      image: image.steel,
-      title: "Steel",
-      description: "Durable iron alloy used in buildings and tools.",
-      price: 2342422,
-    },
-    {
-      id: 9,
-      image: image.zinc,
-      title: "Zinc",
-      description: "Protective metal often used for galvanizing steel.",
-      price: 3242532,
-    }
-  ],
-
   mass_unit: [
     {
       id: 0,
@@ -190,4 +117,144 @@ export const data = {
     For the best experience, keep your internet connection stable and regularly update the application whenever a new version becomes available. 
     By continuing to use this application, you agree to follow the platform guidelines and use the services responsibly.
   `,
+
+
+  //////////////////////////////////////////////////////////////////////////////////////////
+  ////  This data need to come from Server (They will be deleted After app completing)  ////
+  //////////////////////////////////////////////////////////////////////////////////////////
+  
+  // Price page
+  // Metal details for price display
+  metal_details: [
+    {
+      id: 0,
+      image: image.allunium,
+      title: "Alluminium",
+      description: "Lightweight and corrosion resistant metal.",
+      price: 200000,
+    },
+    {
+      id: 1,
+      image: image.brass,
+      title: "Brass",
+      description: "Gold-like alloy made from copper and zinc.",
+      price: 3242532,
+    },
+    {
+      id: 2,
+      image: image.bronze,
+      title: "Bronze",
+      description: "Strong copper alloy commonly used in machinery.",
+      price: 2342422,
+    },
+    {
+      id: 3,
+      image: image.copper,
+      title: "Copper",
+      description: "Highly conductive metal used in electrical wiring.",
+      price: 3242532,
+    },
+    {
+      id: 4,
+      image: image.iron,
+      title: "Iron",
+      description: "Strong ferrous metal widely used in construction.",
+      price: 200000,
+    },
+    {
+      id: 5,
+      image: image.lead,
+      title: "Lead",
+      description: "Heavy soft metal commonly used in batteries.",
+      price: 3242532,
+    },
+    {
+      id: 6,
+      image: image.platinum,
+      title: "Platinum",
+      description: "Rare precious metal with high corrosion resistance.",
+      price: 2342422,
+    },
+    {
+      id: 7,
+      image: image.silver,
+      title: "Silver",
+      description: "Precious metal with excellent electrical conductivity.",
+      price: 3242532,
+    },
+    {
+      id: 8,
+      image: image.steel,
+      title: "Steel",
+      description: "Durable iron alloy used in buildings and tools.",
+      price: 2342422,
+    },
+    {
+      id: 9,
+      image: image.zinc,
+      title: "Zinc",
+      description: "Protective metal often used for galvanizing steel.",
+      price: 3242532,
+    }
+  ],
+
+  // Index page
+  // Top Buyers
+  top_buyers: [
+    {
+      id: 0,
+      name: "John Joseph",
+      image: image.buyer0
+    },
+    {
+      id: 1,
+      name: "Sarehe Haule",
+      image: image.buyer1
+    },
+    {
+      id: 2,
+      name: "Joshua John",
+      image: image.buyer2
+    },
+    {
+      id: 3,
+      name: "Paul Vicent",
+      image: image.buyer3
+    },
+    {
+      id: 4,
+      name: "Ramadhan Omary",
+      image: image.buyer4
+    },
+    {
+      id: 5,
+      name: "Steven Kessy",
+      image: image.buyer5
+    },
+    {
+      id: 6,
+      name: "Hamis Sarehe",
+      image: image.buyer6
+    },
+    {
+      id: 7,
+      name: "Juma Hasani",
+      image: image.buyer7
+    },
+    {
+      id: 8,
+      name: "Kessy Joseph",
+      image: image.buyer8
+    },
+    {
+      id: 9,
+      name: "Amani Amani",
+      image: image.buyer9
+    },
+    {
+      id: 10,
+      name: "Sarehe Omary",
+      image: image.buyer10
+    }
+  ]
 };

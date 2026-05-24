@@ -4,7 +4,6 @@ import { Picker } from "@react-native-picker/picker";
 import { BlurView } from "expo-blur";
 import React, { useEffect, useState } from "react";
 import { Image, StyleSheet, Text, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const Calculator = () => {
   const [unit, setUnit] = useState<number>(
@@ -164,8 +163,8 @@ const styles = StyleSheet.create({
   },
 
   input: {
-    height: 100,
-    fontSize: 60,
+    height: 180,
+    fontSize: 100,
     paddingLeft: 10,
     color: color.black,
     backgroundColor: color.white_gray
@@ -182,7 +181,7 @@ const styles = StyleSheet.create({
   },
 
   price: {
-    fontSize: 30,
+    fontSize: 60,
     color: color.white,
     textAlign: "right",
     marginBottom: 12,
